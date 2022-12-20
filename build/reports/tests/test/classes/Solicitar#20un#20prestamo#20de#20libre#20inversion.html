@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Solicitar un prestamo de libre inversion</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Solicitar un prestamo de libre inversion</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Solicitar un prestamo de libre inversion</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.473s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">error dejando un campo obligatorio vacio al llenar el formulario de solicitud de prestamo de libre inversion</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">solicitud de prestamo exitosa</td>
+<td class="success">0.323s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">solicitud de prestamo fallida por capacidad de pago insuficiente</td>
+<td class="success">0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">solicitud de prestamo fallida por historial crediticio negativo</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo exitosa                                                                             ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:6?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                 ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                    ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud ha sido aprobada?[0m                                               ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudHaSidoAprobada()?[0m
+  ?[32mY ?[0m?[32mse le proporciona informacion sobre el prestamo?[0m                                                                  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeProporcionaInformacionSobreElPrestamo()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo fallida por historial crediticio negativo                                           ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:14?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                 ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                    ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud no ha sido aprobada debido a su historial crediticio negativo?[0m  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudNoHaSidoAprobadaDebidoASuHistorialCrediticioNegativo()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo fallida por capacidad de pago insuficiente                                                 ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:21?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                           ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud no ha sido aprobada debido a que su capacidad de pago es insuficiente?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudNoHaSidoAprobadaDebidoAQueSuCapacidadDePagoEsInsuficiente()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: error dejando un campo obligatorio vacio al llenar el formulario de solicitud de prestamo de libre inversion  ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:28?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                     ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestamos en libre inversion dejando un campo obligatorio vacio?[0m  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestamosEnLibreInversionDejandoUnCampoObligatorioVacio()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que no puede enviar su solicitud debido ha que ha dejado campos obligatorios vacios?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueNoPuedeEnviarSuSolicitudDebidoHaQueHaDejadoCamposObligatoriosVacios()?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 20/12/2022, 3:28:27 p. m.</p>
+</div>
+</div>
+</body>
+</html>

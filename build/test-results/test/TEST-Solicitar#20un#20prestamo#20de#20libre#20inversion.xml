@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Solicitar un prestamo de libre inversion" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-12-20T20:28:26" hostname="DESKTOP-OURTEHE" time="0.478">
+  <properties/>
+  <testcase name="solicitud de prestamo exitosa" classname="Solicitar un prestamo de libre inversion" time="0.323"/>
+  <testcase name="solicitud de prestamo fallida por historial crediticio negativo" classname="Solicitar un prestamo de libre inversion" time="0.079"/>
+  <testcase name="solicitud de prestamo fallida por capacidad de pago insuficiente" classname="Solicitar un prestamo de libre inversion" time="0.037"/>
+  <testcase name="error dejando un campo obligatorio vacio al llenar el formulario de solicitud de prestamo de libre inversion" classname="Solicitar un prestamo de libre inversion" time="0.034"/>
+  <system-out><![CDATA[
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo exitosa                                                                             ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:6?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                 ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                    ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud ha sido aprobada?[0m                                               ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudHaSidoAprobada()?[0m
+  ?[32mY ?[0m?[32mse le proporciona informacion sobre el prestamo?[0m                                                                  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeProporcionaInformacionSobreElPrestamo()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo fallida por historial crediticio negativo                                           ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:14?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                 ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                    ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud no ha sido aprobada debido a su historial crediticio negativo?[0m  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudNoHaSidoAprobadaDebidoASuHistorialCrediticioNegativo()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: solicitud de prestamo fallida por capacidad de pago insuficiente                                                 ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:21?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestramo de libre inversion con todos los datos solicitados?[0m        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestramoDeLibreInversionConTodosLosDatosSolicitados()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                           ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que su solicitud no ha sido aprobada debido a que su capacidad de pago es insuficiente?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueSuSolicitudNoHaSidoAprobadaDebidoAQueSuCapacidadDePagoEsInsuficiente()?[0m
+
+@smokeTest @QA @solicitudDePrestamoDeLibreInversion
+Escenario: error dejando un campo obligatorio vacio al llenar el formulario de solicitud de prestamo de libre inversion  ?[90m# src/test/resources/features/solicitudPrestamoDeLibreInversion.feature:28?[0m
+  ?[32mDado ?[0m?[32mque soy un cliente registrado?[0m                                                                                     ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.queSoyUnClienteRegistrado()?[0m
+  ?[32mCuando ?[0m?[32mel cliente llena el formulario de solicitud de prestamos en libre inversion dejando un campo obligatorio vacio?[0m  ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteLlenaElFormularioDeSolicitudDePrestamosEnLibreInversionDejandoUnCampoObligatorioVacio()?[0m
+  ?[32mY ?[0m?[32mel cliente envia la solicitud?[0m                                                                                        ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.elClienteEnviaLaSolicitud()?[0m
+  ?[32mEntonces ?[0m?[32mse le notifica al cliente que no puede enviar su solicitud debido ha que ha dejado campos obligatorios vacios?[0m ?[90m# stepDefinitions.SolicitudDePrestamoDeLibreInversionSteps.seLeNotificaAlClienteQueNoPuedeEnviarSuSolicitudDebidoHaQueHaDejadoCamposObligatoriosVacios()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
